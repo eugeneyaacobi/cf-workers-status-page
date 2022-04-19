@@ -21,17 +21,24 @@ monitors:
     url: 'https://auth.yaacobi.in/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: traefik
     name: traefik
-    description: 'Traefik Admin Panel'
+    description: 'Application Proxy'
     url: 'https://traefik.yaacobi.in/'
     method: GET
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+
+  - id: direct
+    name: Direct Access
+    url: 'http://home.yaacobi.in/'
+    method: GET
+    followRedirect: true
+    expectStatus: 200
 
   - id: requestrr
     name: Requests
