@@ -29,8 +29,8 @@ monitors:
     description: 'Traefik Admin Panel'
     url: 'https://traefik.yaacobi.in/'
     method: GET
-    expectStatus: 302
-    followRedirect: false # should fetch follow redirects, default=false
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
   - id: requestrr
