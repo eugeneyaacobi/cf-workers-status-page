@@ -46,3 +46,9 @@ monitors:
     method: GET
     followRedirect: true
     expectStatus: 200
+
+  - id: wt
+    name: WatchTogether
+    url: 'https://wt.yaacobi.in/'
+    method: GET
+    expectStatus: 200   
